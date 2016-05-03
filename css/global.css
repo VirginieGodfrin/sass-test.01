@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:700,400);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+/* line 3, ../scss/global.scss */
+body {
+  font: 400 "Open Sans Condensed", sans-serif;
+}
+
+/* line 6, ../scss/global.scss */
+.entete {
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+  background-color: #58859D;
+  width: 100%;
+}
+/* line 11, ../scss/global.scss */
+.entete h1 {
+  padding: 30px 0 0 30px;
+  color: #C1DCEA;
+  font-size: 50px;
+}
+
+/* line 17, ../scss/global.scss */
+.ul_nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px;
+  background-color: #7266AB;
+}
+
+/* line 22, ../scss/global.scss */
+.ul_nav li {
+  display: inline;
+  font: 400 "Noto Sans", sans-serif;
+  font-size: 30px;
+  text-transform: lowercase;
+  color: #CDC7ED;
+  padding-right: 50px;
+}
+/* line 30, ../scss/global.scss */
+.ul_nav li:hover {
+  color: #C1DCEA;
+}
+
+/* line 35, ../scss/global.scss */
+.section_art {
+  display: flex;
+}
+
+/* line 40, ../scss/global.scss */
+.section_art article {
+  padding: 25px;
+}
+/* line 42, ../scss/global.scss */
+.section_art article h2 {
+  text-align: center;
+  font: 30px "Comfortaa", cursive;
+  font-size: 30px;
+  background-color: #615C7B;
+  color: #4499C6;
+}
+/* line 49, ../scss/global.scss */
+.section_art article p {
+  color: #526671;
+  padding: 25px;
+  font-size: 20px;
+}
+
+/* line 57, ../scss/global.scss */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  background-color: #69D757;
+}
+/* line 62, ../scss/global.scss */
+footer address {
+  color: #242F23;
+  font-size: 15px;
+  font-style: normal;
+}
+/* line 66, ../scss/global.scss */
+footer address li {
+  display: block;
+  padding-right: 50px;
+}
+/* line 69, ../scss/global.scss */
+footer address li a {
+  text-decoration: none;
+  color: #7266AB;
+}
+/* line 73, ../scss/global.scss */
+footer address li a:hover {
+  color: #C1DCEA;
+}

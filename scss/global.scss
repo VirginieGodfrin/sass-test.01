@@ -1,0 +1,79 @@
+@import "base";
+
+body{
+  font: 400 $opensans;
+}
+.entete {
+  font-family: $comforta;
+  text-transform: uppercase;
+  background-color: $header_bg_col;
+  width: 100%;
+  h1{
+    padding: 30px 0 0 30px;
+    color: $titre_col;
+    font-size: $font-size-header;
+  }
+}
+.ul_nav{
+  @include flex_justify_left;
+  background-color: $nav_bg_col;
+}
+.ul_nav {
+  li{
+    display: inline;
+    font: 400 $noto;
+    font-size: $font-size-titre;
+    text-transform: lowercase;
+    color: $nav-col;
+    padding-right: $padding-right;
+  }
+  li:hover{
+    color: $nav_bg_col_hover;
+  }
+}
+
+.section_art {
+  display: flex;
+}
+
+.section_art{
+  article{
+    padding : 25px;
+    h2{
+      text-align: center;
+      font: 30px $comforta;
+      font-size: $font-size-titre;
+      background-color: $article_ti_bg_col;
+      color: $article_ti_col;
+    }
+    p{
+      color: $article_col;
+      padding : 25px;
+      font-size: $font-size-art;
+    }
+  }
+}
+
+footer{
+  @include flex_justify_left;
+  width: 100%;
+  background-color: $footer_bg_col;
+
+  address{
+    color: $footer_col;
+    font-size: $font-size-footer;
+    font-style: normal;
+    li{
+      display: block;
+      padding-right: $padding-right;
+      a{
+        text-decoration: none;
+        color: $nav_bg_col;
+      }
+      a:hover{
+        color: $nav_bg_col_hover;
+      }
+    }
+    
+  }
+}

@@ -1,0 +1,61 @@
+// Here i put the config var of my project
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:700,400);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+$opensans: 'Open Sans Condensed', sans-serif;
+$comforta: 'Comfortaa', cursive;
+$noto: 'Noto Sans', sans-serif;
+
+$blue_petrol: #58859D;
+$blue_ciel: #4499C6;
+$blue_cyan: #4B89AB;
+$blue_cl: #C1DCEA;
+$gris_bleu: #526671; 
+
+$vert: #7BCD6E;
+$vert_pomme: #5CE446;
+$vert_moyen: #69D757;
+$vert_cl: #CEF5C8;
+$vert_gris_fc: #242F23;
+
+$violet: #7266AB;
+$violet_bleu: #6751CF;
+$violet_cyan: #6858B8;
+$violet_gris_cl: #6C6492;
+$violet_gris: #615C7B;
+$violet_cl: #CDC7ED;
+
+$header_bg_col: $blue_petrol;
+$titre_col: $blue_cl;
+
+$footer_bg_col: $vert_moyen;
+$footer_col: $vert_gris_fc;
+
+$nav_bg_col: $violet;
+$nav_bg_col_hover: $blue_cl;
+$nav-col: $violet_cl;
+
+$article_col: $gris_bleu;
+$article_ti_bg_col: $violet_gris;
+$article_ti_col: $blue_ciel;
+
+$font-size-header: 50px;
+$font-size-titre: 30px;
+$font-size-art: 20px;
+$font-size-footer: 15px;
+
+$padding-right: 50px;
+
+
+@mixin flex_justify_left{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px;
+}
+
+
+
+
