@@ -1,79 +1,96 @@
 @import "base";
+@import "compass/reset";
 
-body{
-  font: 400 $opensans;
-}
-.entete {
-  font-family: $comforta;
-  text-transform: uppercase;
-  background-color: $header_bg_col;
-  width: 100%;
-  h1{
-    padding: 30px 0 0 30px;
-    color: $titre_col;
-    font-size: $font-size-header;
-  }
-}
-.ul_nav{
-  @include flex_justify_left;
-  background-color: $nav_bg_col;
-}
-.ul_nav {
-  li{
-    display: inline;
-    font: 400 $noto;
-    font-size: $font-size-titre;
-    text-transform: lowercase;
-    color: $nav-col;
-    padding-right: $padding-right;
-  }
-  li:hover{
-    color: $nav_bg_col_hover;
-  }
-}
 
-.section_art {
-  display: flex;
-}
 
-.section_art{
-  article{
-    padding : 25px;
-    h2{
-      text-align: center;
-      font: 30px $comforta;
-      font-size: $font-size-titre;
-      background-color: $article_ti_bg_col;
-      color: $article_ti_col;
-    }
-    p{
-      color: $article_col;
-      padding : 25px;
-      font-size: $font-size-art;
+
+  body{
+    font: 400 $opensans;
+    font-size: $font-size-twenty;
+  }
+  .entete {
+    @include flex-center;
+    height: 20%;
+    font-family: $comfortaa;
+    text-transform: uppercase;
+    background-color: $header_bg_col;
+
+    h1{
+      color: $titre_col;
+      font-size: $font-size-fifty;
+      padding: 30px;
     }
   }
-}
-
-footer{
-  @include flex_justify_left;
-  width: 100%;
-  background-color: $footer_bg_col;
-
-  address{
-    color: $footer_col;
-    font-size: $font-size-footer;
-    font-style: normal;
-    li{
-      display: block;
-      padding-right: $padding-right;
-      a{
-        text-decoration: none;
-        color: $nav_bg_col;
-      }
-      a:hover{
-        color: $nav_bg_col_hover;
-      }
-    }
+  .ul_nav{
+    @include flex-col;
+    background-color: $nav_bg_col;
     
+    li{
+      font: 400 $noto;
+      text-transform: lowercase;
+      color: $nav-col;
+      padding: 25px;
+    }
+
+    li:hover{
+      color: $nav_bg_col_hover;
+    }
+
+    @media screen and (min-width: $break-tab){
+      @include flex-center;
+    }
   }
-}
+  .section_art {
+    @media screen and (min-width: $break-dk-norm){
+      display: flex; 
+      flex-direction: row; 
+    }
+    article{
+    padding : 25px;
+      h2{
+        @include flex-center;
+        font-family:$comfortaa;
+        font-size: $font-size-fifty;
+        background-color: $article_ti_bg_col;
+        color: $article_ti_col;
+        padding : 25px;
+      }
+
+      p{
+        color: $article_col;
+        padding : 25px;
+        font-size: $font-size-twenty;
+        font-family: $comfortaa;
+      }
+    }
+  }
+
+  footer{
+    @include flex-center;
+    background-color: $footer_bg_col;
+    height: $height-twenty;
+    @media screen and (min-width: $break-tab){
+      @include flex-justify_left;
+    }
+    address{
+      color: $footer_col;
+      font-size: $font-size-fifteen;
+      font-style: normal;
+
+      li{
+        display: block;
+        padding-right: $padding-right;
+
+        a{
+          text-decoration: none;
+          color: $nav_bg_col;
+        }
+        a:hover{
+          color: $nav_bg_col_hover;
+        }
+      }
+    }
+  }
+
+
+  

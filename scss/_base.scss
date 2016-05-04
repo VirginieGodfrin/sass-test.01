@@ -5,7 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
 $opensans: 'Open Sans Condensed', sans-serif;
-$comforta: 'Comfortaa', cursive;
+$comfortaa: 'Comfortaa', cursive;
 $noto: 'Noto Sans', sans-serif;
 
 $blue_petrol: #58859D;
@@ -41,19 +41,45 @@ $article_col: $gris_bleu;
 $article_ti_bg_col: $violet_gris;
 $article_ti_col: $blue_ciel;
 
-$font-size-header: 50px;
-$font-size-titre: 30px;
-$font-size-art: 20px;
-$font-size-footer: 15px;
+$font-size-fifty: 50px;
+$font-size-thirty: 30px;
+$font-size-twenty: 20px;
+$font-size-fifteen: 15px;
+
+$tab: 768; 
+
+
 
 $padding-right: 50px;
+
+$break-phone : 480px;
+$break-tab: 768px;
+$break-dk-norm: 992px;
+$break-dk-hd: 1200px;
+
+$height-twenty: 20%;
+
+
+$tab: "screen and (min-width: 780px)";
 
 
 @mixin flex_justify_left{
 	display: flex;
 	justify-content: flex-end;
+}
+
+@mixin flex-center{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	align-items: center;
-	padding: 30px;
+}
+
+@mixin flex-col{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 
